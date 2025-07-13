@@ -1,0 +1,127 @@
+/* Global styles for Legacy Vows */
+.app-container {
+  min-height: 100vh;
+  background-color: #f8f6f0;
+  font-family: 'Inter', sans-serif;
+}
+
+.dark .app-container {
+  background-color: #4a5568;
+}
+
+.section-spacing {
+  padding: 6rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f6f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4a574;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8a9d9;
+}
+
+/* Image lazy loading */
+.lazy-image {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+}
+
+/* Elegant form styles */
+.form-input {
+  background: rgba(248, 246, 240, 0.8);
+  border: 1px solid #d4a574;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #6b73a3;
+  box-shadow: 0 0 0 3px rgba(107, 115, 163, 0.1);
+}
+
+.dark .form-input {
+  background: rgba(74, 85, 104, 0.8);
+  border-color: #8b7355;
+  color: #f8f6f0;
+}
+
+.dark .form-input:focus {
+  border-color: #b8a9d9;
+  box-shadow: 0 0 0 3px rgba(184, 169, 217, 0.1);
+}
+
+/* Button styles */
+.btn-primary {
+  background: linear-gradient(135deg, #d4a574, #6b73a3);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(107, 115, 163, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #6b73a3;
+  border: 2px solid #6b73a3;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: #6b73a3;
+  color: white;
+}
+
+.dark .btn-secondary {
+  color: #b8a9d9;
+  border-color: #b8a9d9;
+}
+
+.dark .btn-secondary:hover {
+  background: #b8a9d9;
+  color: #4a5568;
+}
